@@ -6,12 +6,14 @@ permalink: /README
 
 # Ikenobo Lake Washington Chapter Website
 
-This is the website for the Ikenobo Lake Washington Chapter of the Ikenobo Ikebana Society. It is built with [Jekyll](https://jekyllrb.com/) and hosted on GitHub Pages.
+This is the website for the Ikenobo Lake Washington Chapter of the Ikenobo Ikebana Society.
+It is built with [Jekyll](https://jekyllrb.com/) and hosted on GitHub Pages.
+The repository of this website is at [github.com/lw-ikenobo/lw-ikenobo.github.io](https://github.com/lw-ikenobo/lw-ikenobo.github.io) and is maintained by [lw-ikenobo](github.com/lw-ikenobo) GitHub Organization.
 
 ## Directory Structure
 
 ```
-ikebana/
+/
 ├── index.md                 ← Home page
 ├── Gallery/                 ← Exhibition photo galleries
 │   ├── index.md             ← Gallery listing page (auto-generated tiles)
@@ -168,3 +170,5 @@ To preview the site on your computer before pushing changes:
 ```
 
 Then open your browser to the address shown (usually `http://localhost:4000`). The preview updates automatically when you save changes to files.
+
+Note that the script requires Docker to be installed on your machine and runs Jekyll in a Docker container.
