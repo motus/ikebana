@@ -7,3 +7,5 @@ layout: default
 
 This PowerPoint presentation is the Demonstration by Headmaster Sen'ei Ikenobo and Professor Shimizu at our 10th Anniversary Celebration on July 28th and 29th, 2012. We suggest you click the icon on the lower right to see a full screen view. Clicking the icon a second time will return you to this screen.
 
+{% include pptx_embed.html file="10thann-demonstration.pptx" %}
+

@@ -9,3 +9,5 @@ Chapter's 10th Anniversary Celebration exhibition on July 28th and 29th, 2012 at
 
 {% include gallery.html %}
 
+{% include pptx_embed.html file="pacific_nw_scenes.pptx" %}
+
