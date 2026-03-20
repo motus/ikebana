@@ -1,0 +1,20 @@
+{% assign items = site.pages | where_exp: "item", "item.dir contains include.section" | where_exp: "item", "item.dir != include.section" | sort: "dir" | reverse %}
+<div class="gallery-grid">
+{% for p in items %}
+  {% assign thumb = nil %}
+  {% for f in site.static_files %}
+    {% if f.path contains p.dir and f.extname == '.jpg' %}
+      {% assign thumb = f.path | relative_url %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+  {% unless thumb %}
+    {% if p.content contains 'staticflickr.com' %}
+      {% assign thumb = p.content | split: 'img src="' | last | split: '"' | first %}
+    {% endif %}
+  {% endunless %}
+  <a class="gallery-tile" href="{{ p.url }}"{% if thumb %} style="background-image: url('{{ thumb }}')"{% endif %}>
+    <span>{{ p.title }}</span>
+  </a>
+{% endfor %}
+</div>
